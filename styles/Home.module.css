@@ -403,6 +403,10 @@
     z-index: 1;
   }
 
+  .verde {
+    color: green;
+  }
+
   .section2 {
     padding: 8rem 3rem 8rem 3rem;
   }

@@ -148,9 +148,13 @@
     align-items: center;
   }
   .text1_a1_s1 {
+    font-family: "papyrus";
     margin: 0;
     padding: 0 3rem;
     width: 100vw;
+  }
+  .poema p {
+    font-size: 1.1rem;
   }
   .text1_a1_s1 a {
     display: none;

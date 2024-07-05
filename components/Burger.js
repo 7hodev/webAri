@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 // STYLES
 import styles from "../styles/Burger.module.css";
 
@@ -46,8 +47,14 @@ export default function Burger({ menuOpen, setMenuOpen }) {
         </li>
         <li className={styles.menuItem} onClick={handleMenuItemClick}>
           <Link href="/tallerCultura">
-            <i className="bi bi-envelope-paper-fill"></i>
-            Taller Cultura
+            <Image
+              className={styles.icon}
+              src="/icons/icon.png"
+              alt="Ariadna Garcia"
+              width={20}
+              height={20}
+            />
+            Taller cultura
           </Link>
         </li>
         <li className={styles.menuItem} onClick={handleMenuItemClick}>

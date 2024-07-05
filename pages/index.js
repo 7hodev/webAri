@@ -93,6 +93,7 @@ function Home({ scrollUpFunction, styleScrollUp, menuOpen, setMenuOpen }) {
             aniquiladora de todo <br />
             pesimismo&quot;
           </p>
+          <p className={styles.verde}>&quot;Panamá es verde&quot; y verde debe ser su futuro</p>
         </div>
       </section>
       <section id="section2" className={styles.section2}>
@@ -170,7 +171,7 @@ function Home({ scrollUpFunction, styleScrollUp, menuOpen, setMenuOpen }) {
           <p>Festival Internacional de Poesía de Penonomé en Abril, 2014</p>
         </div>
       </section>
-     
+
       <ScrollUp
         scrollUpFunction={scrollUpFunction}
         styleScrollUp={styleScrollUp}

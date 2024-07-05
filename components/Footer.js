@@ -27,7 +27,7 @@ export default function Footer(props) {
             <Link href="/quien">
               <Image
                 className={styles.group}
-                src="/icons/Quien 11552c.png"
+                src="/icons/Quien.png"
                 alt="Ariadna Garcia"
                 width={20}
                 height={20}
@@ -37,13 +37,7 @@ export default function Footer(props) {
           </div>
           <div className={styles.itemPages}>
             <Link href="/haceres">
-              <Image
-                className={styles.group}
-                src="/icons/Haceres 9351713b.png"
-                alt="Ariadna Garcia"
-                width={20}
-                height={20}
-              />
+              <i class="bi bi-pencil-fill"></i>
               Haceres
             </Link>
           </div>
@@ -51,7 +45,7 @@ export default function Footer(props) {
             <Link href="/andares">
               <Image
                 className={styles.group}
-                src="/icons/Andares 11552b.png"
+                src="/icons/Andares.png"
                 alt="Ariadna Garcia"
                 width={20}
                 height={20}
@@ -63,7 +57,7 @@ export default function Footer(props) {
             <Link href="/tallerCultura">
               <Image
                 className={styles.group}
-                src="/icon.png"
+                src="/icons/icon.png"
                 alt="Ariadna Garcia"
                 width={20}
                 height={20}
