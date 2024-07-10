@@ -149,7 +149,7 @@ export default function Andares({
           <div className={styles.evento2}>
             <Image
               className={styles.imgEvento1}
-              src="/Foto2b.jpg"
+              src="/carrusel/Foto2b.jpg"
               alt="Ariadna Garcia"
               width={320}
               height={300}

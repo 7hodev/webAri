@@ -39,7 +39,9 @@
   width: 40%;
   height: 550px;
   margin-right: 10rem;
-  font-family: "papyrus";
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   text-align: end;
   position: absolute;
   display: flex;
@@ -133,6 +135,11 @@
   display: flex;
   flex-flow: row wrap;
   text-align: justify;
+  hyphens: auto; /* Permite la separación de palabras */
+  -webkit-hyphens: auto; /* Para navegadores basados en WebKit */
+  -moz-hyphens: auto; /* Para Firefox */
+  word-spacing: 2px; /* Ajusta el espaciado entre palabras */
+  letter-spacing: 0.5px; /* Ajusta el espaciado entre letras */
 }
 
 .description p {
@@ -148,9 +155,6 @@
     align-items: center;
   }
   .text1_a1_s1 {
-    font-family: "Ga Maamli", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     margin: 0;
     padding: 0 3rem;
     width: 100vw;

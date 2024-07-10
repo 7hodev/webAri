@@ -43,7 +43,7 @@ export default function Navbar() {
             <Link href="/tallerCultura">
               <Image
                 className={styles.group}
-                src="/icon.png"
+                src="/icons/icon.png"
                 alt="Ariadna Garcia"
                 width={20}
                 height={20}

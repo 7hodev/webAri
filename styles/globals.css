@@ -14,10 +14,3 @@ a {
 * {
   box-sizing: border-box;
 }
-
-@font-face {
-  font-family: 'papyrus';
-  src: url('/fonts/papyrus.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}

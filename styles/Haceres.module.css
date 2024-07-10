@@ -44,7 +44,7 @@
 
 /* SECTION 2 */
 .publicaciones {
-  padding: 6rem 6rem 0 6rem;
+  padding: 6rem 0 0 0;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -54,14 +54,25 @@
 .publicaciones h2 {
   font-size: 2rem;
 }
+.publi {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+}
+
+.extras {
+  background-color: rgb(255, 255, 255);
+  padding: 3rem 0 6rem 0;
+}
 
 .container {
-  width: 100%;
+  margin: 0 5rem;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .libro1 {
@@ -69,7 +80,6 @@
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  border-radius: 1rem;
   gap: 1rem;
 }
 
@@ -87,6 +97,7 @@
   width: 35rem;
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   align-items: flex-start;
   gap: 2rem;
 }
@@ -94,7 +105,6 @@
 .comentario {
   background-color: #fff;
   width: 15rem;
-  margin-left: 10rem;
   padding: 1rem;
   border: none;
   border-radius: 1rem;
@@ -137,7 +147,6 @@
 .comentario4 {
   background-color: #fff;
   width: 15rem;
-  margin-left: 10rem;
   padding: 1rem;
   border: none;
   border-radius: 1rem;
