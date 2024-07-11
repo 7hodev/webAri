@@ -90,7 +90,7 @@ export default function Haceres({
       </section>
       <section className={styles.publicaciones}>
         <div className={styles.publi}>
-          <div className={styles.container}>
+          <div className={styles.container1}>
             <div className={styles.libro1}>
               <Image
                 className={styles.libro1img}
@@ -138,7 +138,7 @@ export default function Haceres({
               </button>
             </div>
           </div>
-          <div className={styles.container}>
+          <div className={styles.container2}>
             <div className={styles.comentarios}>
               <Comentarios
                 modalForm={comentario41}
@@ -170,7 +170,7 @@ export default function Haceres({
             </div>
           </div>
 
-          <div className={styles.container}>
+          <div className={styles.container1}>
             <div className={styles.libro1}>
               <Image
                 className={styles.libro1img}
@@ -206,7 +206,7 @@ export default function Haceres({
             </div>
           </div>
 
-          <div className={styles.container}>
+          <div className={styles.container2}>
             <div className={styles.comentarios}>
               <Comentarios
                 modalForm={comentario21}
@@ -234,7 +234,7 @@ export default function Haceres({
               </h3>
             </div>
           </div>
-          <div className={styles.container}>
+          <div className={styles.container1}>
             <div className={styles.libro1}>
               <Image
                 className={styles.libro1img}
@@ -289,7 +289,7 @@ export default function Haceres({
               </button>
             </div>
           </div>
-          <div className={styles.container}>
+          <div className={styles.container2}>
             <div className={styles.comentarios}>
               <Comentarios
                 modalForm={comentario51}
@@ -327,7 +327,7 @@ export default function Haceres({
               </h3>
             </div>
           </div>
-          <div className={styles.container}>
+          <div className={styles.container1}>
             <div className={styles.libro1}>
               <Image
                 className={styles.libro1img}
@@ -356,7 +356,7 @@ export default function Haceres({
           </div>
         </div>
         <div className={styles.extras}>
-          <div className={styles.container}>
+          <div className={styles.container2}>
             <div className={styles.comentarios}>
               <p>
                 Por un pétrea crónica de agua: estudio introductorio, estudio
@@ -380,7 +380,7 @@ export default function Haceres({
               </h3>
             </div>
           </div>
-          <div className={styles.container}>
+          <div className={styles.container1}>
             <div className={styles.libro1}>
               <Image
                 className={styles.libro1img}
@@ -400,7 +400,7 @@ export default function Haceres({
               </p>
             </div>
           </div>
-          <div className={styles.container}>
+          <div className={styles.container2}>
             <div className={styles.comentarios}>
               <p>
                 Paisaje y desarraigo en la escritura jaramilloleviana, estudio
@@ -425,7 +425,7 @@ export default function Haceres({
               </h3>
             </div>
           </div>
-          <div className={styles.container}>
+          <div className={styles.container1}>
             <div className={styles.libro1}>
               <Image
                 className={styles.libro1img}
@@ -448,7 +448,7 @@ export default function Haceres({
               </p>
             </div>
           </div>
-          <div className={styles.container}>
+          <div className={styles.container2}>
             <div className={styles.comentarios}>
               <p>
                 Canto de cenizas sobre el agua, artículo-reseña del poemario

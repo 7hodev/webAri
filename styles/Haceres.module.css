@@ -58,15 +58,29 @@
   width: 100%;
   display: flex;
   flex-flow: column wrap;
-  gap: 1rem;
+  align-items: center;
+  gap: 3rem;
 }
 
 .extras {
   background-color: rgb(255, 255, 255);
   padding: 3rem 0 6rem 0;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 3rem;
 }
 
-.container {
+.container1 {
+  margin: 0 5rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.container2 {
   margin: 0 5rem;
   display: flex;
   flex-flow: row wrap;
@@ -181,19 +195,34 @@
 
   .publicaciones {
     padding: 0;
-    width: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    gap: 2rem;
+  }
+
+  .publi {
+    gap: 5rem;
+  }
+
+  .extras {
+    gap: 5rem;
   }
   
-  .container {
-    width: 80%;
+  .container1 {
+    width: 100%;
+    margin: 0;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 1rem;
+  }
+
+  .container2 {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-flow: column-reverse wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
   }
   
   .libro1 {
