@@ -105,13 +105,13 @@ export default function Footer(props) {
           setModalFormSend={setModalFormSend}
         />
       </div>
-      <div className={styles.webapp}>
+      <div className={styles.thosoft}>
         <a
           href="https://7hosoft.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by <h3 className={styles.webapp_title}>7hoSoft</h3>
+          Powered by <h3 className={styles.thosoft_title}>7hoSoft</h3>
         </a>
       </div>
     </footer>

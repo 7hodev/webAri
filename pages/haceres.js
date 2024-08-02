@@ -77,6 +77,7 @@ export default function Haceres({
 
   return (
     <div className={styles.body}>
+      <div className={styles.flash}></div>
       <Navbar />
       <Burger menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <section id="section1" className={styles.section1}>

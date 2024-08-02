@@ -15,6 +15,7 @@
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: flex-start;
+  z-index: 1;
 }
 .container h4 {
   font-size: 2rem;
@@ -80,8 +81,11 @@
   display: flex;
 }
 
-/* WEBAPP */
-.webapp a {
+/* 7hoSoft */
+.thosoft {
+  z-index: 1;
+}
+.thosoft a {
   color: aliceblue;
   margin: 0 0 2rem 0;
   text-decoration: none;
@@ -90,10 +94,10 @@
   align-items: center;
   flex-grow: 1;
 }
-.webapp a:hover {
+.thosoft a:hover {
   color: rgb(255, 255, 255);
 }
-.webapp_title {
+.thosoft_title {
   color: #fff;
   margin-left: 0.5rem;
   text-shadow: #000 3px 2px;
@@ -101,7 +105,7 @@
   font-weight: bold;
   transition: all 0.3s ease 0s;
 }
-.webapp_title:hover {
+.thosoft_title:hover {
   color: #fff;
   text-shadow: #000 3px 2px;
   transform: scale(1.1);

@@ -75,6 +75,7 @@
     flex-flow: row wrap;
     justify-content: flex-start;
     gap: 1rem;
+    z-index: 2;
   }
 
   .more h4 {

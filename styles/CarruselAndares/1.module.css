@@ -1,0 +1,71 @@
+.swiper {
+  width: 20rem;
+  height: 45rem;
+}
+
+.swiperSlide {
+  text-align: start;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.evento1 p {
+  margin-top: 1rem;
+}
+
+/* EVENTO 2 */
+.row1 .evento2 {
+    background-color: blue;
+    width: 30rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .imgEvento2 {
+    position: absolute;
+    right: 29.5rem;
+    margin-top: 17rem;
+  }
+  
+  .row1 .textEvento2 {
+    width: 20rem;
+    padding-top: 2rem;
+    margin-right: 1.5rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+/* BUTTON */
+.button {
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    text-decoration: none;
+    border-bottom: 3px solid #000;
+    background: none;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .button:hover {
+    transform: translateY(-7px);
+    color: #000;
+  }
+
+@media only screen and (max-width: 450px) {
+  .img {
+    width: 24rem;
+    height: 30rem;
+  }
+}

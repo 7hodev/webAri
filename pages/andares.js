@@ -7,6 +7,8 @@ import Footer from "../components/Footer";
 import ScrollUp from "../components/ScrollUp";
 import Burger from "../components/Burger";
 import Carrusel from "../components/Carrusel";
+import CarruselAndares1 from "../components/CarruselAndares/1";
+import CarruselAndares2 from "../components/CarruselAndares/2";
 /* STYLES */
 import styles from "../styles/Andares.module.css";
 
@@ -34,45 +36,11 @@ export default function Andares({
       </section>
       <section className={styles.trayectoria}>
         <div className={styles.row1}>
-          <div id="evento1" className={styles.evento1}>
-            <Image
-              className={styles.imgEvento1}
-              src="/example.jpg"
-              alt="Ariadna Garcia"
-              width={320}
-              height={300}
-              priority
-            />
-            <p>00/00/0000</p>
-            <h3>Title</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              dolore in non veritatis dolores autem pariatur, cupiditate odio
-              sapiente deleniti maxime placeat cum nobis corporis facere ipsa
-              voluptas iste eaque.
-            </p>
-            <button className={styles.button}>Link</button>
+          <div className={styles.evento1}>
+            <CarruselAndares1 />
           </div>
           <div className={styles.evento2}>
-            <Image
-              className={styles.imgEvento2}
-              src="/example.jpg"
-              alt="Ariadna Garcia"
-              width={320}
-              height={400}
-              priority
-            />
-            <div className={styles.textEvento2}>
-              <p>00/00/0000</p>
-              <h3>Title</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                dolore in non veritatis dolores autem pariatur, cupiditate odio
-                sapiente deleniti maxime placeat cum nobis corporis facere ipsa
-                voluptas iste eaque.
-              </p>
-              <button className={styles.button}>Link</button>
-            </div>
+            <CarruselAndares2 />
           </div>
         </div>
         <div className={styles.row2}>
