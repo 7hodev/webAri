@@ -35,6 +35,14 @@ export default function App() {
       >
         <SwiperSlide className={styles.SwiperSlide}>
           <Image className={styles.img} src="/carrusel/Foto1b.jpg" alt="" width={500} height={500} />
+          <p>
+              <i>
+                Porque la conversación y sus alteraciones son un atributo más de
+                lo poético y lo musical.
+                <br />
+              </i>{" "}
+              <strong>BBP Bethancourt, 2014</strong>
+            </p>
         </SwiperSlide>
         <SwiperSlide className={styles.SwiperSlide}>
           <Image className={styles.img} src="/carrusel/Foto2b.jpg"alt="" width={500} height={500} />

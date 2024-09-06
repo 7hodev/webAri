@@ -1,6 +1,5 @@
 .swiper {
-  width: 43.5rem;
-  height: 45rem;
+  width: 100%;
 }
 
 .swiperSlide {
@@ -14,24 +13,55 @@
 
 /* EVENTO 2 */
 .evento2 {
-  width: 100%;
-  height: 100%;
+  background-color: red;
+  margin-top: 2rem;
   display: flex;
   flex-flow: row wrap;
+  align-items: flex-start;
   justify-content: space-between;
-  align-items: center;
 }
 
 .imgEvento2 {
+  flex-basis: 45%;
 }
 
 .textEvento2 {
-  width: 21rem;
+  flex-basis: 50%;
   margin-bottom: 7rem;
   display: flex;
   flex-flow: column wrap;
   align-items: flex-start;
   justify-content: center;
+}
+
+/* NAVIGATION */
+.customPrev,
+.customNext {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  color: #000000;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+
+.customPrev {
+  top: 3rem;
+  left: 14rem;
+}
+
+.customNext {
+  top: 3rem;
+  right: 23.5rem;
+}
+
+.customPrev:hover,
+.customNext:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* BUTTON */
@@ -51,6 +81,53 @@
 .button:hover {
   transform: translateY(-7px);
   color: #000;
+}
+
+/* AUDIO */
+.audioPlayer {
+  margin: 0;
+  margin-bottom: 2rem;
+  padding: 0;
+  width: 100%;
+  outline: none;
+}
+.audioPlayer::-webkit-media-controls-panel {
+  margin: 0rem;
+  padding: 0rem;
+  background-color: #d5d5d5;
+}
+.audioPlayeraudio::-webkit-media-controls-play-button,
+.audioPlayeraudio::-webkit-media-controls-mute-button,
+.audioPlayeraudio::-webkit-media-controls-timeline,
+.audioPlayeraudio::-webkit-media-controls-current-time-display,
+.audioPlayeraudio::-webkit-media-controls-time-remaining-display {
+  color: #fff;
+}
+
+@media only screen and (max-width: 1260px) {
+  
+  /* EVENTO 2 */
+  .evento2 {
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .imgEvento2 {
+  }
+
+  .textEvento2 {
+    width: 21rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 450px) {

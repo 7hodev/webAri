@@ -1,67 +1,150 @@
 .swiper {
-  width: 20rem;
-  height: 45rem;
+  width: 100%;
 }
 
 .swiperSlide {
   text-align: start;
 
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.evento1 p {
-  margin-top: 1rem;
+/* NAVIGATION */
+.customPrev,
+.customNext {
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+  color: #000000;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 15px;
 }
 
-/* EVENTO 2 */
-.row1 .evento2 {
-    background-color: blue;
-    width: 30rem;
-    margin-top: 5rem;
+.customPrev {
+  top: 0;
+  left: 0;
+}
+
+.customNext {
+  top: 0;
+  right: 0;
+}
+
+.customPrev:hover,
+.customNext:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* BUTTON */
+.button {
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  text-decoration: none;
+  border-bottom: 3px solid #000;
+  background: none;
+  transition: all 0.3s ease 0s;
+}
+
+.button:hover {
+  transform: translateY(-7px);
+  color: #000;
+}
+
+/* AUDIO */
+.audioPlayer {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 2rem;
+  padding: 0;
+  outline: none;
+  
+}
+.audioPlayer::-webkit-media-controls-panel {
+  margin: 0rem;
+  padding: 0rem;
+  background-color: #fff;
+}
+.audioPlayeraudio::-webkit-media-controls-play-button,
+.audioPlayeraudio::-webkit-media-controls-mute-button,
+.audioPlayeraudio::-webkit-media-controls-timeline,
+.audioPlayeraudio::-webkit-media-controls-current-time-display,
+.audioPlayeraudio::-webkit-media-controls-time-remaining-display {
+  color: #fff;
+}
+
+@media only screen and (max-width: 1260px) {
+  .body {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .swiper {
+    width: 92%;
+  }
+  .customPrev,
+  .customNext {
+    width: 4%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    cursor: pointer;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .customPrev {
+    top: 0;
+    left: 0;
+    border-radius: 45px 0 0 45px;
+  }
+  
+  .customNext {
+    top: 0;
+    right: 0;
+    border-radius: 0 45px 45px 0;
+  }
+
+  .swiperSlide {
+    text-align: start;
+  }
+
+  .evento1 {
+    background-color: #cfcfcf;
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
     align-items: center;
   }
   
-  .imgEvento2 {
-    position: absolute;
-    right: 29.5rem;
-    margin-top: 17rem;
+  .imgEvento1 {
+    flex-basis: 45%;
+  }
+
+  .img {
+    width: 100%;
   }
   
-  .row1 .textEvento2 {
-    width: 20rem;
-    padding-top: 2rem;
-    margin-right: 1.5rem;
+  .textEvento1 {
+    flex-basis: 50%;
     display: flex;
     flex-flow: column wrap;
     align-items: flex-start;
     justify-content: center;
-    gap: 0.5rem;
   }
-
-/* BUTTON */
-.button {
-    font-size: 18px;
-    color: #000;
-    font-weight: 600;
-    cursor: pointer;
-    position: relative;
-    border: none;
-    text-decoration: none;
-    border-bottom: 3px solid #000;
-    background: none;
-    transition: all 0.3s ease 0s;
-  }
-  
-  .button:hover {
-    transform: translateY(-7px);
-    color: #000;
-  }
+}
 
 @media only screen and (max-width: 450px) {
   .img {

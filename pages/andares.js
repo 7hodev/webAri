@@ -105,14 +105,6 @@ export default function Andares({
         <div className={styles.row3}>
           <div className={styles.evento1}>
             <Carrusel />
-            <p>
-              <i>
-                Porque la conversación y sus alteraciones son un atributo más de
-                lo poético y lo musical.
-                <br />
-              </i>{" "}
-              <strong>BBP Bethancourt, 2014</strong>
-            </p>
           </div>
           <div className={styles.evento2}>
             <Image
@@ -139,6 +131,8 @@ export default function Andares({
               </strong>{" "}
               Sanbors, Multiplaza, Panamá 2014.
             </p>
+            <div >
+            </div>
             <Link
               href="https://www.youtube.com/watch?v=JNnpk9lMkNM"
               target="_blank"
