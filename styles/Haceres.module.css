@@ -55,6 +55,7 @@
   width: 100%;
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -64,36 +65,36 @@
 .publi {
   width: 100%;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
+  justify-content: center;
   align-items: center;
   gap: 3rem;
 }
 
 .extras {
   background-color: rgb(255, 255, 255);
-  padding: 3rem 0 6rem 0;
+  width: 100%;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
+  justify-content: center;
   align-items: center;
   gap: 3rem;
 }
 
 .container1 {
-  margin: 0 5rem;
+  width: 85%;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
 }
 
 .container2 {
-  margin: 0 5rem;
+  width: 85%;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
 }
 
 .libro1 {
@@ -116,7 +117,7 @@
 
 /* COMENTARIOS */
 .comentarios {
-  width: 35rem;
+  width: 32rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -182,14 +183,6 @@
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   transform: scale(1.1);
   transition: all 0.5s ease;
-}
-
-.publi {
-  
-}
-
-.extras {
-  width: 100%;
 }
 
 
