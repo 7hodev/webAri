@@ -140,18 +140,6 @@ export default function Haceres({
             </div>
           </div>
           <div className={styles.container2}>
-            <div className={styles.comentarios}>
-              <Comentarios
-                modalForm={comentario41}
-                setModalForm={setComentario41}
-                comentario="“Es un yo lírico tenaz, recio, fuerte, armado con la ironía. Sus poemas son también canciones con letra y música para que tengan todos los lenguajes del Horus. Visual, auditivo, kinésico para aumentar su poder de movilización emocional.”"
-                people="Rafael Ruiloba"
-                more="Catedrático y escritor (Panamá)."
-              />
-              <button className={styles.comentario} onClick={cart41}>
-                Rafael Ruiloba
-              </button>
-            </div>
             <div className={styles.libro1}>
               <Image
                 className={styles.libro1img}
@@ -169,9 +157,52 @@ export default function Haceres({
                 posmoderna en Panamá
               </h3>
             </div>
+            <div className={styles.comentarios}>
+              <Comentarios
+                modalForm={comentario41}
+                setModalForm={setComentario41}
+                comentario="“Es un yo lírico tenaz, recio, fuerte, armado con la ironía. Sus poemas son también canciones con letra y música para que tengan todos los lenguajes del Horus. Visual, auditivo, kinésico para aumentar su poder de movilización emocional.”"
+                people="Rafael Ruiloba"
+                more="Catedrático y escritor (Panamá)."
+              />
+              <button className={styles.comentario} onClick={cart41}>
+                Rafael Ruiloba
+              </button>
+            </div>
           </div>
-
           <div className={styles.container1}>
+            <div className={styles.libro1}>
+              <Image
+                className={styles.libro1img}
+                src="/lapalabraprovocada.jpg"
+                alt="Ariadna Garcia"
+                width={300}
+                height={370}
+                priority
+              />
+              <h3>2019 - La palabra provocada</h3>
+            </div>
+            <div className={styles.comentarios}>
+              <p>
+                &quot;Panamá siempre ha estado pendiente de una asignatura.
+                Desde el siglo XVII, fecha en la que se encuentran los primeros
+                poemas de poetas panameños reunidos en la Antología poética
+                &quot;Llanto de Panamá a la muerte de Enrique Enríquez&quot;
+                (Madrid 1638). hasta estos tiempos modernos de usbs y poemas
+                interactivos ha corrido mucho agua de canal bajo el puente.
+                Panamá es poesía por todos lados, No sólo es el Canal o su clima
+                tropical, sus playas caribeñas o su selva exótica y hermosa,
+                sino, creo yo, su mayor potencial y atractivo está en su gente,
+                y sobre todo en aquella gente que escribe poesía y rediseña todo
+                el almade los panameños modernos. Gente de proyección que ahora
+                desea aprobar esa asignatura pendinte con su propia herencia
+                cultural. Desea rescatar desde las profundidades de su
+                diversidad las voces de esos poetas indígenas, hispánicos y
+                afroamericanos&quot;.
+              </p>
+            </div>
+          </div>
+          <div className={styles.container2}>
             <div className={styles.libro1}>
               <Image
                 className={styles.libro1img}
@@ -206,20 +237,7 @@ export default function Haceres({
               </button>
             </div>
           </div>
-
-          <div className={styles.container2}>
-            <div className={styles.comentarios}>
-              <Comentarios
-                modalForm={comentario21}
-                setModalForm={setComentario21}
-                comentario="“Trabajo experimental de poesía sonora que busca dejar atrás la simple musicalización de poemas en pos de un verdadero dialogo creativo entre dos disciplinas artísticas: la composición musical y la composición poética, tal como lo dice Bethancourt en el epígrafe de la caratula: porque la conversación y sus alteraciones son un atributo más de lo poético y lo musical. Realizado en conjunto con la Maestra Electra Castillo, compositora e instrumentista, el mismo consta de piezas cortas, para oboe, cuerdas y piano, concebidas a manera de ensayo sinfónico en respuesta al poemario, mientras la voz de la poeta da vida a los poemas. Se llevó a cabo una presentación del libro y un concierto preliminar en la antigua Exedra Books, en 2012.”"
-                people="Eyra Harbar"
-                more="Escritora y abogada (Panamá)."
-              />
-              <button className={styles.comentario} onClick={cart21}>
-                Eyra Harbar
-              </button>
-            </div>
+          <div className={styles.container1}>
             <div className={styles.libro1}>
               <Image
                 className={styles.libro1img}
@@ -234,8 +252,20 @@ export default function Haceres({
                 <br /> para Abrazos de una nariz sin olfato
               </h3>
             </div>
+            <div className={styles.comentarios}>
+              <Comentarios
+                modalForm={comentario21}
+                setModalForm={setComentario21}
+                comentario="“Trabajo experimental de poesía sonora que busca dejar atrás la simple musicalización de poemas en pos de un verdadero dialogo creativo entre dos disciplinas artísticas: la composición musical y la composición poética, tal como lo dice Bethancourt en el epígrafe de la caratula: porque la conversación y sus alteraciones son un atributo más de lo poético y lo musical. Realizado en conjunto con la Maestra Electra Castillo, compositora e instrumentista, el mismo consta de piezas cortas, para oboe, cuerdas y piano, concebidas a manera de ensayo sinfónico en respuesta al poemario, mientras la voz de la poeta da vida a los poemas. Se llevó a cabo una presentación del libro y un concierto preliminar en la antigua Exedra Books, en 2012.”"
+                people="Eyra Harbar"
+                more="Escritora y abogada (Panamá)."
+              />
+              <button className={styles.comentario} onClick={cart21}>
+                Eyra Harbar
+              </button>
+            </div>
           </div>
-          <div className={styles.container1}>
+          <div className={styles.container2}>
             <div className={styles.libro1}>
               <Image
                 className={styles.libro1img}
@@ -290,7 +320,21 @@ export default function Haceres({
               </button>
             </div>
           </div>
-          <div className={styles.container2}>
+          <div className={styles.container1}>
+            <div className={styles.libro1}>
+              <Image
+                className={styles.libro1img}
+                src="/nunezdebalboa.png"
+                alt="Ariadna Garcia"
+                width={300}
+                height={370}
+                priority
+              />
+              <h3>
+                1999, 2001 y 2013 - Vasco Núñez de Balboa
+                <br /> y la geopsiquis de una nación
+              </h3>
+            </div>
             <div className={styles.comentarios}>
               <Comentarios
                 modalForm={comentario51}
@@ -313,22 +357,8 @@ export default function Haceres({
                 Carlos Fitzgerald
               </button>
             </div>
-            <div className={styles.libro1}>
-              <Image
-                className={styles.libro1img}
-                src="/nunezdebalboa.png"
-                alt="Ariadna Garcia"
-                width={300}
-                height={370}
-                priority
-              />
-              <h3>
-                1999, 2001 y 2013 - Vasco Núñez de Balboa
-                <br /> y la geopsiquis de una nación
-              </h3>
-            </div>
           </div>
-          <div className={styles.container1}>
+          <div className={styles.container2}>
             <div className={styles.libro1}>
               <Image
                 className={styles.libro1img}
@@ -357,15 +387,7 @@ export default function Haceres({
           </div>
         </div>
         <div className={styles.extras}>
-          <div className={styles.container2}>
-            <div className={styles.comentarios}>
-              <p>
-                Por un pétrea crónica de agua: estudio introductorio, estudio
-                introductorio sobre el poemario Xibalbá: Texas de Leonel
-                Alvarado, Colección Premio Centroamericano Rogelio Sinán,
-                Universidad Tecnológica de Panamá, 2014, pp. 5-13.
-              </p>
-            </div>
+          <div className={styles.container1}>
             <div className={styles.libro1}>
               <Image
                 className={styles.libro1img}
@@ -380,8 +402,16 @@ export default function Haceres({
                 estudio introductorio
               </h3>
             </div>
+            <div className={styles.comentarios}>
+              <p>
+                Por un pétrea crónica de agua: estudio introductorio, estudio
+                introductorio sobre el poemario Xibalbá: Texas de Leonel
+                Alvarado, Colección Premio Centroamericano Rogelio Sinán,
+                Universidad Tecnológica de Panamá, 2014, pp. 5-13.
+              </p>
+            </div>
           </div>
-          <div className={styles.container1}>
+          <div className={styles.container2}>
             <div className={styles.libro1}>
               <Image
                 className={styles.libro1img}
@@ -401,16 +431,7 @@ export default function Haceres({
               </p>
             </div>
           </div>
-          <div className={styles.container2}>
-            <div className={styles.comentarios}>
-              <p>
-                Paisaje y desarraigo en la escritura jaramilloleviana, estudio
-                sobre la obra del escritor Enrique Jaramillo Levi en Habitar la
-                escritura. -De `Duplicaciones´ (1973) a ´Inmersiones` (2019)-
-                Indagaciones sobre la obra literaria de Enrique Jaramillo Levi,
-                Foro/Taller Sagitario Ediciones, Panamá, 2019, pp. 17-51.
-              </p>
-            </div>
+          <div className={styles.container1}>
             <div className={styles.libro1}>
               <Image
                 className={styles.libro1img}
@@ -425,8 +446,17 @@ export default function Haceres({
                 escritura jaramilloleviana
               </h3>
             </div>
+            <div className={styles.comentarios}>
+              <p>
+                Paisaje y desarraigo en la escritura jaramilloleviana, estudio
+                sobre la obra del escritor Enrique Jaramillo Levi en Habitar la
+                escritura. -De `Duplicaciones´ (1973) a ´Inmersiones` (2019)-
+                Indagaciones sobre la obra literaria de Enrique Jaramillo Levi,
+                Foro/Taller Sagitario Ediciones, Panamá, 2019, pp. 17-51.
+              </p>
+            </div>
           </div>
-          <div className={styles.container1}>
+          <div className={styles.container2}>
             <div className={styles.libro1}>
               <Image
                 className={styles.libro1img}
@@ -449,15 +479,7 @@ export default function Haceres({
               </p>
             </div>
           </div>
-          <div className={styles.container2}>
-            <div className={styles.comentarios}>
-              <p>
-                Canto de cenizas sobre el agua, artículo-reseña del poemario
-                `Managua 38º´ de Marta Leonor González (Nicaragua) en Realidad:
-                Revista de Ciencias Sociales y Humanidades (156): 2021, pp.
-                247-253.
-              </p>
-            </div>
+          <div className={styles.container1}>
             <div className={styles.libro1}>
               <Image
                 className={styles.libro1img}
@@ -469,6 +491,14 @@ export default function Haceres({
               />
               <h3>2021 - Canto de cenizas sobre el agua</h3>
             </div>
+            <div className={styles.comentarios}>
+              <p>
+                Canto de cenizas sobre el agua, artículo-reseña del poemario
+                `Managua 38º´ de Marta Leonor González (Nicaragua) en Realidad:
+                Revista de Ciencias Sociales y Humanidades (156): 2021, pp.
+                247-253.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -477,7 +507,7 @@ export default function Haceres({
         scrollUpFunction={scrollUpFunction}
         styleScrollUp={styleScrollUp}
       />
-     <Footer
+      <Footer
         page="/haceres"
         section1="Section 1"
         section2="Section 2"
