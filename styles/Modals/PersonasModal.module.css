@@ -1,0 +1,269 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 100;
+}
+
+.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modalContainer {
+  background-color: #fff;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 900px;
+  max-height: 90vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  padding: 0;
+  margin: 20px;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.modalHeader h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.2s;
+}
+
+.closeButton:hover {
+  color: #000;
+}
+
+.modalContent {
+  padding: 1rem;
+  overflow: hidden;
+  height: 100%;
+}
+
+.personaSlide {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  justify-content: space-between !important;
+  gap: 30px;
+  padding: 20px;
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.personaImageContainer {
+  position: relative;
+  width: 45% !important;
+  min-width: 300px;
+  height: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  flex: 0 0 auto;
+}
+
+.personaImage {
+  border-radius: 8px;
+}
+
+.personaInfo {
+  width: 55% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px;
+  flex: 1 1 auto;
+}
+
+.personaNombre {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.personaPuesto {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.personaDescripcion {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Media queries para dispositivos más pequeños */
+@media (max-width: 992px) {
+  .modalContainer {
+    max-width: 800px;
+  }
+  
+  .personaImageContainer {
+    width: 40% !important;
+    height: 350px;
+  }
+  
+  .personaInfo {
+    width: 60% !important;
+  }
+  
+  .personaNombre {
+    font-size: 1.6rem;
+  }
+  
+  .personaPuesto {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .modalContainer {
+    width: 95%;
+    max-height: 85vh;
+  }
+  
+  .personaSlide {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 15px;
+    overflow: hidden;
+  }
+  
+  .personaImageContainer {
+    width: 100% !important;
+    max-width: 280px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  
+  .personaInfo {
+    width: 100% !important;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .modalHeader h2 {
+    font-size: 1.5rem;
+  }
+  
+  .personaNombre {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  
+  .personaPuesto {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .personaDescripcion {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .modalContainer {
+    margin: 10px;
+  }
+  
+  .modalHeader {
+    padding: 12px 16px;
+  }
+  
+  .modalContent {
+    padding: 0.5rem;
+  }
+  
+  .personaSlide {
+    padding: 10px;
+  }
+  
+  .personaImageContainer {
+    height: 250px;
+    max-width: 220px;
+  }
+  
+  .modalHeader h2 {
+    font-size: 1.3rem;
+  }
+  
+  .personaNombre {
+    font-size: 1.3rem;
+  }
+  
+  .personaDescripcion {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .modalContainer {
+    margin: 5px;
+    max-height: 90vh;
+  }
+  
+  .personaSlide {
+    gap: 10px;
+  }
+  
+  .personaImageContainer {
+    height: 220px;
+    max-width: 180px;
+  }
+  
+  .modalHeader h2 {
+    font-size: 1.2rem;
+  }
+  
+  .closeButton {
+    font-size: 24px;
+  }
+  
+  .personaNombre {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .personaPuesto {
+    font-size: 0.9rem;
+    margin-bottom: 0.7rem;
+  }
+  
+  .personaDescripcion {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+} 

@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import ScrollUp from "../components/ScrollUp";
 import Burger from "../components/Burger";
 import TimelineCarousel from "../components/TimelineCarousel";
+import PersonasModal from "../components/modals/PersonasModal";
 /* DATA */
 /* STYLES */
 import styles from "../styles/TallerCultura.module.css";
@@ -16,6 +17,33 @@ export default function TallerCultura({
   menuOpen,
   setMenuOpen,
 }) {
+  const [modalPersonas, setModalPersonas] = useState(false);
+
+  // Datos de ejemplo para las personas
+  const personas = [
+    {
+      nombre: "María González",
+      puesto: "Directora Ejecutiva",
+      descripcion:
+        "Licenciada en Literatura con más de 10 años de experiencia en gestión cultural. Ha liderado proyectos de promoción literaria y desarrollo comunitario a través de la cultura. Su visión ha sido fundamental para el crecimiento de Taller Cultura desde sus inicios.",
+      imagen: "/ejemplo-persona.jpg", // Reemplazar con imagen real
+    },
+    {
+      nombre: "Carlos Ramírez",
+      puesto: "Coordinador de Proyectos",
+      descripcion:
+        "Especialista en gestión cultural con enfoque en derechos humanos. Ha coordinado iniciativas de alfabetización y promoción de la lectura en comunidades vulnerables. Lidera el programa de mentoría para jóvenes escritores.",
+      imagen: "/ejemplo-persona2.jpg", // Reemplazar con imagen real
+    },
+    {
+      nombre: "Ana Castillo",
+      puesto: "Responsable de Comunicación",
+      descripcion:
+        "Comunicadora social con experiencia en medios digitales. Se encarga de dar visibilidad a las actividades de la fundación y mantener el contacto con la comunidad. También coordina los talleres de escritura creativa.",
+      imagen: "/ejemplo-persona3.jpg", // Reemplazar con imagen real
+    },
+  ];
+
   const images = [
     { url: "/timelapse/2013a.jpg", year: 2013 },
     { url: "/timelapse/2013b.jpg", year: 2013 },
@@ -137,6 +165,14 @@ export default function TallerCultura({
             </p>
           </div>
         </div>
+        <div className={styles.personasSection}>
+          <button
+            onClick={() => setModalPersonas(true)}
+            className={styles.personasButton}
+          >
+            Personas
+          </button>
+        </div>
       </section>
       <section id="section1" className={styles.sectionMini}>
         <Image
@@ -211,9 +247,19 @@ export default function TallerCultura({
         </div>
       </section>
       <section id="section2" className={styles.section2}>
-        <h3>Línea de tiempo</h3>
+        <h2 className={styles.timelineTitle}>Nuestra Historia en Imágenes</h2>
+        <p className={styles.timelineDescription}>
+          Navega por los distintos años para ver nuestras actividades a lo largo
+          del tiempo
+        </p>
         <TimelineCarousel images={images} />
       </section>
+
+      <PersonasModal
+        modalPersonas={modalPersonas}
+        setModalPersonas={setModalPersonas}
+        personas={personas}
+      />
       <ScrollUp
         scrollUpFunction={scrollUpFunction}
         styleScrollUp={styleScrollUp}

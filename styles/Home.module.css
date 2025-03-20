@@ -109,69 +109,340 @@
 }
 
 .container {
-  width: 50rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  min-height: 100vh;
   display: flex;
-  flex-flow: row wrap;
-  align-items: center;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.heroSection {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  max-height: 800px;
+  min-height: 500px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.heroImage {
+  object-fit: cover;
+}
+
+.heroContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  text-align: center;
+  color: white;
 }
 
-/*
-.p1 {
-  font-size: 1.5rem;
-  display: block;
-  font-family: monospace;
-  white-space: nowrap;
-  border-right: 4px solid;
-  width: 49ch;
-
-  animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
-  overflow: hidden;
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.p2 {
-  color: rgb(39, 255, 39);
+.subtitle {
   font-size: 1.5rem;
-  display: block;
-  font-family: monospace;
-  white-space: nowrap;
-  border-right: 4px solid;
-  width: 49ch;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
 
-  animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
-  overflow: hidden;
-}*/
+.buttonContainer {
+  display: flex;
+  gap: 1rem;
+}
 
-.textContainer {
-  color: rgb(255, 255, 255);
-  width: 50rem;
-  margin-top: 0rem;
+.button {
+  padding: 0.8rem 1.5rem;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.button:hover {
+  background-color: #0060df;
+  transform: translateY(-2px);
+}
+
+.secondaryButton {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.secondaryButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.featuredSection {
+  margin: 3rem 0;
+}
+
+.sectionTitle {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
   text-align: center;
 }
 
-.typingText {
-  font-size: 1.5rem;
-  display: inline-block;
-  font-family: monospace;
-  white-space: nowrap;
+.featuredGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.cardContainer {
+  border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.cursor {
+.cardContainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cardImageContainer {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.cardImage {
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.cardText {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.cardButton {
   display: inline-block;
-  width: 0.15em; /* Grosor del cursor */
-  height: 1.2em; /* Altura del cursor */
-  background-color: white;
-  animation: blink 0.5s infinite alternate;
+  padding: 0.5rem 1rem;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
 }
 
-@keyframes blink {
-  0% {
-    opacity: 0;
+.cardButton:hover {
+  background-color: #0060df;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 1rem;
   }
-  100% {
-    opacity: 1;
+  
+  .featuredGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .title {
+    font-size: 2.7rem;
+  }
+  
+  .subtitle {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .heroSection {
+    height: 70vh;
+  }
+  
+  .featuredGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0.8rem;
+  }
+  
+  .heroSection {
+    height: 60vh;
+    min-height: 400px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    max-width: 95%;
+  }
+  
+  .buttonContainer {
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 80%;
+    max-width: 300px;
+  }
+  
+  .featuredGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .cardImageContainer {
+    height: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 0.6rem;
+  }
+  
+  .heroSection {
+    height: 50vh;
+    min-height: 350px;
+    margin-bottom: 1.2rem;
+    border-radius: 8px;
+  }
+  
+  .heroContent {
+    padding: 1rem;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .button {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+  .featuredSection {
+    margin: 2rem 0;
+  }
+  
+  .sectionTitle {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cardContent {
+    padding: 1.2rem;
+  }
+  
+  .cardTitle {
+    font-size: 1.2rem;
+  }
+  
+  .cardText {
+    font-size: 0.9rem;
+  }
+  
+  .cardButton {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 1.6rem;
+  }
+  
+  .subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .button {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .cardImageContainer {
+    height: 160px;
+  }
+  
+  .cardTitle {
+    font-size: 1.1rem;
   }
 }
 

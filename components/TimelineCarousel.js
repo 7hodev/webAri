@@ -7,7 +7,9 @@ import styles from '../styles/TimelineCarousel.module.css'; // Estilos CSS perso
 
 const TimelineCarousel = ({ images }) => {
   const sliderRef = useRef(null);
-  const [yearIndices, setYearIndices] = useState({}); // Estado para almacenar el índice de la primera imagen de cada año
+  const [yearIndices, setYearIndices] = useState({});
+  const [activeYear, setActiveYear] = useState(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     // Agrupar imágenes por año y obtener el índice de la primera imagen de cada año
@@ -18,7 +20,12 @@ const TimelineCarousel = ({ images }) => {
       }
     });
     setYearIndices(indices);
-  }, [images]);
+    
+    // Establecer el año inicial como el primer año disponible
+    if (Object.keys(indices).length > 0 && !activeYear) {
+      setActiveYear(Object.keys(indices)[0]);
+    }
+  }, [images, activeYear]);
 
   const settings = {
     dots: false,
@@ -28,12 +35,33 @@ const TimelineCarousel = ({ images }) => {
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: '0px',
+    beforeChange: (current, next) => {
+      setCurrentSlide(next);
+      // Actualizar el año activo basado en la diapositiva actual
+      const currentImageYear = images[next]?.year;
+      if (currentImageYear && currentImageYear !== activeYear) {
+        setActiveYear(currentImageYear.toString());
+      }
+    },
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          dots: false,
+          slidesToShow: 1
+        }
+      }
+    ]
   };
 
   // Función para cambiar el año y desplazarse al primer slide de ese año
   const changeYear = (year) => {
     const yearIndex = yearIndices[year];
-    sliderRef.current.slickGoTo(yearIndex);
+    if (yearIndex !== undefined && sliderRef.current) {
+      sliderRef.current.slickGoTo(yearIndex);
+      setActiveYear(year);
+    }
   };
 
   return (
@@ -43,7 +71,10 @@ const TimelineCarousel = ({ images }) => {
         {Object.keys(yearIndices).map((year) => (
           <button
             key={year}
-            className={styles.timelineButton}
+            className={classNames(
+              styles.timelineButton,
+              { [styles.active]: activeYear === year }
+            )}
             onClick={() => changeYear(year)}
           >
             {year}
@@ -51,13 +82,24 @@ const TimelineCarousel = ({ images }) => {
         ))}
       </div>
       {/* Carrusel de imágenes */}
-      <Slider {...settings} ref={sliderRef}>
-        {images.map((image, index) => (
-          <div key={index}>
-            <img src={image.url} alt={`Image ${index}`} />
-          </div>
-        ))}
-      </Slider>
+      <div className={styles.sliderContainer}>
+        <Slider {...settings} ref={sliderRef}>
+          {images.map((image, index) => (
+            <div key={index} className={styles.slideItem}>
+              <div className={styles.imageWrapper}>
+                <img 
+                  src={image.url} 
+                  alt={`Imagen del año ${image.year}`} 
+                  className={styles.slideImage}
+                />
+              </div>
+              <div className={styles.yearIndicator}>
+                {image.year}
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 };

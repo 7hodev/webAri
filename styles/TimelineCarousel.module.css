@@ -2,55 +2,215 @@
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .timelineButton {
   background-color: #fff;
-  border: none;
-  padding: 5px 10px;
-  margin: 0 5px;
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  margin: 0 3px;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.timelineButton:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
 }
 
 .timelineButton.active {
-  background-color: #ccc;
+  background-color: #000;
+  color: white;
+  border-color: #000;
 }
 
 /* TimelineCarousel.css */
 .timelineCarousel {
-  max-width: 1200px; /* Establece un ancho máximo para el carrusel */
-  margin: 0 auto; /* Centra el carrusel en la página */
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
-.timelineCarousel img {
-  max-width: 350px; /* Ajusta el ancho máximo de las imágenes al tamaño máximo del contenedor */
-  height: 500px; /* Permite que la altura se ajuste proporcionalmente al ancho */
-  margin: 0 50px; /* Agrega un margen horizontal entre las imágenes */
+.sliderContainer {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
 }
 
-/* Media Query para dispositivos móviles */
+.slideItem {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.imageWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.slideImage {
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
+}
+
+.yearIndicator {
+  background-color: #000;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Estilos para los puntos del carrusel (hidden) */
+.timelineCarousel :global(.slick-dots) {
+  display: none !important;
+}
+
+.timelineCarousel :global(.slick-prev),
+.timelineCarousel :global(.slick-next) {
+  font-size: 0;
+  z-index: 1;
+}
+
+.timelineCarousel :global(.slick-prev:before),
+.timelineCarousel :global(.slick-next:before) {
+  font-size: 24px;
+  color: #000;
+}
+
+.timelineCarousel :global(.slick-prev) {
+  left: -15px;
+}
+
+.timelineCarousel :global(.slick-next) {
+  right: -15px;
+}
+
+/* Desktop grande */
+@media only screen and (min-width: 1200px) {
+  .timelineCarousel {
+    max-width: 900px;
+  }
+  
+  .slideImage {
+    max-height: 550px;
+  }
+}
+
+/* Tablet grande */
+@media only screen and (max-width: 992px) {
+  .timelineCarousel {
+    max-width: 700px;
+  }
+  
+  .slideImage {
+    max-height: 450px;
+  }
+  
+  .timelineButton {
+    padding: 7px 10px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Tablets normales */
+@media only screen and (max-width: 768px) {
+  .timelineCarousel {
+    max-width: 90%;
+  }
+  
+  .timelineButtons {
+    gap: 0.3rem;
+  }
+
+  .timelineButton {
+    padding: 6px 10px;
+    margin: 3px 2px;
+    font-size: 0.9rem;
+  }
+
+  .slideImage {
+    max-height: 400px;
+  }
+  
+  .yearIndicator {
+    padding: 4px 12px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile landscape y pequeños */
+@media only screen and (max-width: 576px) {
+  .timelineCarousel {
+    max-width: 95%;
+    padding: 10px 0;
+  }
+  
+  .timelineButtons {
+    margin-bottom: 15px;
+  }
+  
+  .timelineButton {
+    padding: 5px 8px;
+    font-size: 0.85rem;
+    margin: 2px;
+  }
+  
+  .slideImage {
+    max-height: 350px;
+  }
+  
+  .timelineCarousel :global(.slick-prev) {
+    left: -10px;
+  }
+  
+  .timelineCarousel :global(.slick-next) {
+    right: -10px;
+  }
+  
+  .timelineCarousel :global(.slick-prev:before),
+  .timelineCarousel :global(.slick-next:before) {
+    font-size: 20px;
+  }
+}
+
+/* Mobile pequeños */
 @media only screen and (max-width: 450px) {
   .timelineCarousel {
-    max-width: 80vw; /* Establece un ancho máximo para el carrusel */
-    margin: 0 auto; /* Centra el carrusel en la página */
+    padding: 5px 0;
   }
+  
   .timelineButtons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Permite que los botones se envuelvan en una nueva línea si no hay suficiente espacio */
-    justify-content: space-around; /* Distribuye uniformemente los elementos a lo largo del contenedor */
-    margin-bottom: 20px;
     gap: 0.2rem;
   }
 
   .timelineButton {
-    margin: 5px 0; /* Agrega espacio entre los botones */
+    padding: 4px 7px;
+    margin: 2px 1px;
+    font-size: 0.8rem;
   }
 
-  .timelineCarousel img {
-    max-width: 500px;
-    height: 500px;
-    margin: 0;
+  .slideImage {
+    max-height: 300px;
+  }
+  
+  .yearIndicator {
+    padding: 3px 10px;
+    font-size: 0.85rem;
+    margin-top: 5px;
   }
 }
