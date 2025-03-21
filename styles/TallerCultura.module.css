@@ -140,13 +140,6 @@
   position: relative;
 }
 
-/* Clase adicional para usar con el botón para mayor flexibilidad */
-.floatingButton {
-  position: relative;
-  display: inline-flex;
-  margin: 1rem 0;
-}
-
 .personasButton:hover {
   background-color: #000;
   transform: translateY(-3px);

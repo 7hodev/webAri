@@ -12,6 +12,8 @@ import styles from "../styles/Footer.module.css";
 export default function Footer(props) {
   const [modalFormSend, setModalFormSend] = useState(false);
 
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer id="footer" className={styles.footer}>
       <div className={styles.container}>
@@ -111,14 +113,18 @@ export default function Footer(props) {
           setModalFormSend={setModalFormSend}
         />
       </div>
-      <div className={styles.webapp}>
-        <a
-          href="https://rgarciadev.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by <h3 className={styles.webapp_title}>7hodev</h3>
-        </a>
+      <div className={styles.footerContainer}>
+        <div className={styles.footerContainer2}>
+          <div className={styles.footerContainer3}>
+            <div className={styles.footerLay}>
+              &copy; {currentYear}{" "}
+              <Link href="https://rgarciadev.vercel.app/" className={styles.footerLink}>
+                7hodev
+              </Link>
+              . Todos los derechos reservados.
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   );

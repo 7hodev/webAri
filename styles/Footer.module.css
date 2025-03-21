@@ -1,7 +1,7 @@
 .footer {
   background: linear-gradient(4deg, rgba(54,54,54,1) 0%, rgba(0,0,0,1) 100%);
   flex-basis: 100%;
-  padding: 2rem 0;
+  padding: 2rem 0 0 0;
   border-top: 1px solid #ccccccaf;
   display: flex;
   flex-flow: column wrap;
@@ -106,6 +106,42 @@
   text-shadow: #000 3px 2px;
   transform: scale(1.1);
   transition: all 0.3s ease 0s;
+}
+
+.footerContainer {
+  border-top: 1px solid #ccccccaf;
+  width: 100%;;
+}
+
+.footerContainer2 {
+  max-width: 5xl;
+}
+
+.footerContainer3 {
+  text-align: center;
+  margin: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.footerLink {
+  color: #fff;
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: bold;
+  transition: all 0.3s ease 0s;
+}
+
+.footerLink:hover {
+  color: #000;
+}
+
+.footerLay {
+  color: white;
+  font-size: sm;
 }
 
 @media only screen and (max-width: 450px) {

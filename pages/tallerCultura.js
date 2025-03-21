@@ -266,6 +266,14 @@ export default function TallerCultura({
             correo: @fundaciontallercultura
           </p>
         </div>
+        <div className={styles.personasSection}>
+          <button
+            onClick={() => setModalPersonas(true)}
+            className={styles.personasButton}
+          >
+            Equipo
+          </button>
+        </div>
       </section>
       <section id="section2" className={styles.section2}>
         <h2 className={styles.timelineTitle}>Nuestra Historia en Imágenes</h2>
