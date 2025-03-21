@@ -33,28 +33,28 @@ export default function TallerCultura({
       puesto: "Vicepresidenta",
       descripcion:
         "Escritora y abogada de profesión, especialista en derecho administrativo y gestión cultural con enfoque en derechos humanos y género.  Ha participado y coordinado iniciativas relacionadas con comunidades vulnerables y migrantes. Fiel colaboradora de rescatistas de animales. Ha sido varias veces galardonada con premios nacionales de literatura. ",
-      imagen: "/elequipo/EH pic TC 2025.jpeg", 
+      imagen: "/elequipo/EHpicTC2025.jpeg", 
     },
     {
       nombre: "JISSEL SUCRE SOUSA",
       puesto: "Tesorera",
       descripcion:
         "Reconocida Corredora de Seguros independiente, profesión que ejerce desde el año 2008. Graduada en Finanzas, tiene también una Maestría en Administración de Negocios con énfasis en Gerencia Estratégica, ambos títulos de la Universidad Interamericana de Panamá. Entre sus otras esperticias se cuenta: el mercado de valores, mismo en el que tiene una pericia de 7 años, y la gestión de redes sociales, siendo hoy la community manager de la marca Conos y Waffles Clarita. Es también una ávida lectora así como aficionada a la fotografía y la numismática.",
-      imagen: "/elequipo/JS pic TC 2025a.jpg", 
+      imagen: "/elequipo/JSpicTC2025a.jpg", 
     },
     {
       nombre: "JOEL IVÁN DEL CID GRAJALES",
       puesto: "Secretario",
       descripcion:
         "Ingeniero Electromecánico de formación y Profesor de Francés como Lengua Extranjera, nacido en la ciudad de David. Ávido lector desde la infancia, amante tanto de las ciencias como de las letras. Es también agregado cultural de la Alianza Francesa de David y presidente del Movimiento Furtivos. Literatura, Arte, Cultura de Chiriquí. Entre sus hoobies practica el ajedrez no profesional desde muy joven.",
-      imagen: "/elequipo/JIDC pic TC 20252.jpg", 
+      imagen: "/elequipo/JIDCpicTC20252.jpg", 
     },
     {
       nombre: "HÉCTOR PINEDA SÁNCHEZ",
       puesto: "Vocal I",
       descripcion:
         "Geógrafo de profesión, labora actualmente en el Instituto de GeoCiencias de la Universidad de Panamá. Cuenta con una Maestría en Administración de Proyectos con Especialización en Evaluación. Y está cursando otra maestría en Ciencias de la Tierra. Es un lector empedernido y lo ganó la literatura, en particular la poesía. Ha sido participante en el taller de formación de escritores del Ministerio de Cultura (PROFE) en la modalidad poesía en el año 2022. Ha sido publicado en la antología poética Gavillas de la memoria (producto del taller PROFE) y en la antología de cuentos titulada Cuentos en tinta fresca (2021).",
-      imagen: "/elequipo/HP pic TC 2025a2.JPG", 
+      imagen: "/elequipo/HPpicTC2025a2.JPG", 
     },
     {
       nombre: "ROSIBEL SILVA PINEDA",
