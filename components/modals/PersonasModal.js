@@ -42,7 +42,7 @@ const PersonasModal = ({ modalPersonas, setModalPersonas, personas }) => {
     >
       <div className={styles.modalContainer} onClick={handleModalClick}>
         <div className={styles.modalHeader}>
-          <h2>Nuestro Equipo</h2>
+          <h2>Equipo</h2>
           <button className={styles.closeButton} onClick={handleClose}>
             &times;
           </button>

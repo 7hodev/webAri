@@ -117,7 +117,7 @@ export default function Footer(props) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by <h3 className={styles.webapp_title}>7hoSoft</h3>
+          Powered by <h3 className={styles.webapp_title}>7hodev</h3>
         </a>
       </div>
     </footer>

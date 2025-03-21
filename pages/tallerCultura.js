@@ -22,25 +22,46 @@ export default function TallerCultura({
   // Datos de ejemplo para las personas
   const personas = [
     {
-      nombre: "María González",
-      puesto: "Directora Ejecutiva",
+      nombre: "Ariadna García Rodríguez",
+      puesto: "Presidenta",
       descripcion:
-        "Licenciada en Literatura con más de 10 años de experiencia en gestión cultural. Ha liderado proyectos de promoción literaria y desarrollo comunitario a través de la cultura. Su visión ha sido fundamental para el crecimiento de Taller Cultura desde sus inicios.",
-      imagen: "/ejemplo-persona.jpg", // Reemplazar con imagen real
+        "Escritora, docente e investigadora con más de 20 años de experiencia en gestión cultural. Ha liderado proyectos de promoción literaria y desarrollo comunitario a través de la cultura. Su visión ha sido fundamental para el crecimiento de Taller Cultura desde sus inicios. Lidera el programa de mentoría para jóvenes emprendedores. Es también directora ejecutiva de Taller Cultura Publicaciones.",
+      imagen: "/elequipo/bbpbethancourtariadnagarciarodriguez2.jpg", 
     },
     {
-      nombre: "Carlos Ramírez",
-      puesto: "Coordinador de Proyectos",
+      nombre: "Eyra Harbar Gómez",
+      puesto: "Vicepresidenta",
       descripcion:
-        "Especialista en gestión cultural con enfoque en derechos humanos. Ha coordinado iniciativas de alfabetización y promoción de la lectura en comunidades vulnerables. Lidera el programa de mentoría para jóvenes escritores.",
-      imagen: "/ejemplo-persona2.jpg", // Reemplazar con imagen real
+        "Escritora y abogada de profesión, especialista en derecho administrativo y gestión cultural con enfoque en derechos humanos y género.  Ha participado y coordinado iniciativas relacionadas con comunidades vulnerables y migrantes. Fiel colaboradora de rescatistas de animales. Ha sido varias veces lagardonada con premios nacionales de literatura. ",
+      imagen: "/elequipo/EH pic TC 2025.jpeg", 
     },
     {
-      nombre: "Ana Castillo",
-      puesto: "Responsable de Comunicación",
+      nombre: "JISSEL SUCRE SOUSA",
+      puesto: "Tesorera",
       descripcion:
-        "Comunicadora social con experiencia en medios digitales. Se encarga de dar visibilidad a las actividades de la fundación y mantener el contacto con la comunidad. También coordina los talleres de escritura creativa.",
-      imagen: "/ejemplo-persona3.jpg", // Reemplazar con imagen real
+        "Reconocida Corredora de Seguros independiente, profesión que ejerce desde el año 2008. Graduada en Finanzas, tiene también una Maestría en Administración de Negocios con énfasis en Gerencia Estratégica, ambos títulos de la Universidad Interamericana de Panamá. Entre sus otras esperticias se cuenta: el mercado de valores, mismo en el que tiene una pericia de 7 años, y la gestión de redes sociales, siendo hoy la community manager de la marca Conos y Waffles Clarita. Es también una ávida lectora así como aficionada a la fotografía y la numismática.",
+      imagen: "/elequipo/JS pic TC 2025a.jpg", 
+    },
+    {
+      nombre: "JOEL IVÁN DEL CID GRAJALES",
+      puesto: "Secretario",
+      descripcion:
+        "Ingeniero Electromecánico de formación y Profesor de Francés como Lengua Extranjera, nacido en la ciudad de David. Ávido lector desde la infancia, amante tanto de las ciencias como de las letras. Es también agregado cultural de la Alianza Francesa de David y presidente del Movimiento Furtivos. Literatura, Arte, Cultura de Chiriquí. Entre sus hoobies practica el ajedrez no profesional desde muy joven.",
+      imagen: "/elequipo/JIDC pic TC 20252.jpg", 
+    },
+    {
+      nombre: "HÉCTOR PINEDA SÁNCHEZ",
+      puesto: "Vocal I",
+      descripcion:
+        "Geógrafo de profesión, labora actualmente en el Instituto de GeoCiencias de la Universidad de Panamá. Cuenta con una Maestría en Administración de Proyectos con Especialización en Evaluación. Y está cursando otra maestría en Ciencias de la Tierra. Es un lector empedernido y lo ganó la literatura, en particular la poesía. Ha sido participante en el taller de formación de escritores del Ministerio de Cultura (PROFE) en la modalidad poesía en el año 2022. Ha sido publicado en la antología poética Gavillas de la memoria (producto del taller PROFE) y en la antología de cuentos titulada Cuentos en tinta fresca (2021).",
+      imagen: "/elequipo/HP pic TC 2025a2.JPG", 
+    },
+    {
+      nombre: "ROSIBEL SILVA PINEDA",
+      puesto: "Vocal II",
+      descripcion:
+        "Publicista con experiencia en gestión de redes sociales ha participado en diversos proyectos de comunicación digital. Actualmente, se desempeña como Promotora en la cooperativa COOPACREOJ, R.L., enfocándose en la promoción y captación de nuevos socios. Apasionada por la lectura y los idiomas, estudia francés y fue becada del programa Súperate de la Fundación Alberto Motta, donde se formó en inglés, informática y valores, reforzando su compromiso con el aprendizaje y el crecimiento personal.",
+      imagen: "/elequipo/IMG-20250319-WA0023.jpg", 
     },
   ];
 
@@ -170,7 +191,7 @@ export default function TallerCultura({
             onClick={() => setModalPersonas(true)}
             className={styles.personasButton}
           >
-            Personas
+            Equipo
           </button>
         </div>
       </section>

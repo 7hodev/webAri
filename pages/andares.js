@@ -90,7 +90,7 @@ export default function Andares({
         </div>
       </section>
       <section className={styles.trayectoria}>
-        <h2>Nuestros Eventos</h2>
+        <h2></h2>
         
         <div className={styles.row1}>
           {/* Carrusel para evento1 de row1 */}
