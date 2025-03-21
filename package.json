@@ -12,6 +12,7 @@
     "@emailjs/browser": "^3.6.2",
     "bootstrap": "^5.2.0-beta1",
     "classnames": "^2.5.1",
+    "lucide-react": "^0.483.0",
     "moment": "^2.30.1",
     "next": "13.0.0",
     "react": "18.2.0",

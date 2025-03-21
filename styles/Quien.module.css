@@ -30,7 +30,7 @@
 }
 
 .imageS1 {
-  width: 100vw;
+  width: 100%;
   z-index: 0;
 }
 
@@ -150,7 +150,7 @@
   .text1_a1_s1 {
     margin: 0;
     padding: 0 3rem;
-    width: 100vw;
+    width: 100%;
   }
   .text1_a1_s1 a {
     display: none;
@@ -164,4 +164,9 @@
   .description {
     width: 75%;
   }
+}
+
+.imageS3 {
+  width: 100%;
+  z-index: 0;
 }

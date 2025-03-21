@@ -4,6 +4,7 @@ import Image from "next/image";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 /* COMPONENTS */
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -109,8 +110,8 @@ export default function Andares({
                   <div className={styles.fechaContainer}>
                     <p>{evento.fecha}</p>
                     <div className={styles.botonesContainer}>
-                      <button onClick={() => slider1Ref.current.slickPrev()} className={carouselStyles.carouselButton}>&#8249;</button>
-                      <button onClick={() => slider1Ref.current.slickNext()} className={carouselStyles.carouselButton}>&#8250;</button>
+                      <button onClick={() => slider1Ref.current.slickPrev()} className={carouselStyles.carouselButton}><ChevronLeft size={24} /></button>
+                      <button onClick={() => slider1Ref.current.slickNext()} className={carouselStyles.carouselButton}><ChevronRight size={24} /></button>
                     </div>
                   </div>
                   <h3>{evento.titulo}</h3>
@@ -138,8 +139,8 @@ export default function Andares({
                     <div className={styles.fechaContainer}>
                       <p>{evento.fecha}</p>
                       <div className={styles.botonesContainer}>
-                        <button onClick={() => slider2Ref.current.slickPrev()} className={carouselStyles.carouselButton}>&#8249;</button>
-                        <button onClick={() => slider2Ref.current.slickNext()} className={carouselStyles.carouselButton}>&#8250;</button>
+                        <button onClick={() => slider2Ref.current.slickPrev()} className={carouselStyles.carouselButton}><ChevronLeft size={24} /></button>
+                        <button onClick={() => slider2Ref.current.slickNext()} className={carouselStyles.carouselButton}><ChevronRight size={24} /></button>
                       </div>
                     </div>
                     <h3>{evento.titulo}</h3>
@@ -169,8 +170,8 @@ export default function Andares({
                   <div className={styles.fechaContainer}>
                     <p>{evento.fecha}</p>
                     <div className={styles.botonesContainer}>
-                      <button onClick={() => slider3Ref.current.slickPrev()} className={carouselStyles.carouselButton}>&#8249;</button>
-                      <button onClick={() => slider3Ref.current.slickNext()} className={carouselStyles.carouselButton}>&#8250;</button>
+                      <button onClick={() => slider3Ref.current.slickPrev()} className={carouselStyles.carouselButton}><ChevronLeft size={24} /></button>
+                      <button onClick={() => slider3Ref.current.slickNext()} className={carouselStyles.carouselButton}><ChevronRight size={24} /></button>
                     </div>
                   </div>
                   <h3>{evento.titulo}</h3>
@@ -197,8 +198,8 @@ export default function Andares({
                   <div className={styles.fechaContainer}>
                     <p>{evento.fecha}</p>
                     <div className={styles.botonesContainer}>
-                      <button onClick={() => slider4Ref.current.slickPrev()} className={carouselStyles.carouselButton}>&#8249;</button>
-                      <button onClick={() => slider4Ref.current.slickNext()} className={carouselStyles.carouselButton}>&#8250;</button>
+                      <button onClick={() => slider4Ref.current.slickPrev()} className={carouselStyles.carouselButton}><ChevronLeft size={24} /></button>
+                      <button onClick={() => slider4Ref.current.slickNext()} className={carouselStyles.carouselButton}><ChevronRight size={24} /></button>
                     </div>
                   </div>
                   <h3>{evento.titulo}</h3>
@@ -225,8 +226,8 @@ export default function Andares({
                   <div className={styles.fechaContainer}>
                     <p>{evento.fecha}</p>
                     <div className={styles.botonesContainer}>
-                      <button onClick={() => slider5Ref.current.slickPrev()} className={carouselStyles.carouselButton}>&#8249;</button>
-                      <button onClick={() => slider5Ref.current.slickNext()} className={carouselStyles.carouselButton}>&#8250;</button>
+                      <button onClick={() => slider5Ref.current.slickPrev()} className={carouselStyles.carouselButton}><ChevronLeft size={24} /></button>
+                      <button onClick={() => slider5Ref.current.slickNext()} className={carouselStyles.carouselButton}><ChevronRight size={24} /></button>
                     </div>
                   </div>
                   <h3>{evento.titulo}</h3>
@@ -254,7 +255,7 @@ export default function Andares({
           <div className={styles.evento2}>
             <Image
               className={styles.imgEvento1}
-              src="/Foto2b.jpg"
+              src="/carrusel/Foto2b.jpg"
               alt="Ariadna Garcia"
               width={320}
               height={300}

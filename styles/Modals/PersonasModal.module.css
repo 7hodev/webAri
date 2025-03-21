@@ -12,6 +12,7 @@
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s;
   z-index: 100;
+  overflow: hidden;
 }
 
 .active {
@@ -22,9 +23,9 @@
 .modalContainer {
   background-color: #fff;
   border-radius: 8px;
-  width: 90%;
-  max-width: 900px;
-  max-height: 90vh;
+  width: 95%;
+  max-width: 1000px;
+  max-height: 95vh;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -63,9 +64,10 @@
 }
 
 .modalContent {
-  padding: 1rem;
+  padding: 1rem 3rem;
   overflow: hidden;
   height: 100%;
+  position: relative;
 }
 
 .personaSlide {
@@ -192,6 +194,12 @@
     font-size: 0.95rem;
     text-align: center;
   }
+  
+  .navButton {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -226,6 +234,12 @@
   
   .personaDescripcion {
     font-size: 0.9rem;
+  }
+  
+  .navButton {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
   }
 }
 
@@ -266,4 +280,44 @@
     font-size: 0.85rem;
     line-height: 1.5;
   }
+  
+  .navButton {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+}
+
+/* Botones de navegación personalizados */
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.navButton:hover {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.prevButton {
+  left: 10px;
+}
+
+.nextButton {
+  right: 10px;
 } 

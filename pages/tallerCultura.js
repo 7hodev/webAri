@@ -32,7 +32,7 @@ export default function TallerCultura({
       nombre: "Eyra Harbar Gómez",
       puesto: "Vicepresidenta",
       descripcion:
-        "Escritora y abogada de profesión, especialista en derecho administrativo y gestión cultural con enfoque en derechos humanos y género.  Ha participado y coordinado iniciativas relacionadas con comunidades vulnerables y migrantes. Fiel colaboradora de rescatistas de animales. Ha sido varias veces lagardonada con premios nacionales de literatura. ",
+        "Escritora y abogada de profesión, especialista en derecho administrativo y gestión cultural con enfoque en derechos humanos y género.  Ha participado y coordinado iniciativas relacionadas con comunidades vulnerables y migrantes. Fiel colaboradora de rescatistas de animales. Ha sido varias veces galardonada con premios nacionales de literatura. ",
       imagen: "/elequipo/EH pic TC 2025.jpeg", 
     },
     {

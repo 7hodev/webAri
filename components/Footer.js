@@ -113,7 +113,7 @@ export default function Footer(props) {
       </div>
       <div className={styles.webapp}>
         <a
-          href="https://7hosoft.vercel.app/"
+          href="https://rgarciadev.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
         >

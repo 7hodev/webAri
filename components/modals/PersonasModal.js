@@ -1,6 +1,7 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import Slider from 'react-slick';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import styles from '../../styles/Modals/PersonasModal.module.css';
@@ -8,18 +9,31 @@ import styles from '../../styles/Modals/PersonasModal.module.css';
 const PersonasModal = ({ modalPersonas, setModalPersonas, personas }) => {
   const sliderRef = useRef(null);
 
+  // Evitar scroll cuando el modal está abierto
+  useEffect(() => {
+    if (modalPersonas) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [modalPersonas]);
+
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     responsive: [
       {
         breakpoint: 768,
         settings: {
-          arrows: true,
+          arrows: false,
           dots: false,
         }
       }
@@ -35,6 +49,14 @@ const PersonasModal = ({ modalPersonas, setModalPersonas, personas }) => {
     e.stopPropagation();
   };
 
+  const goToPrev = () => {
+    sliderRef.current.slickPrev();
+  };
+
+  const goToNext = () => {
+    sliderRef.current.slickNext();
+  };
+
   return (
     <div 
       className={`${styles.modalOverlay} ${modalPersonas ? styles.active : ''}`}
@@ -48,6 +70,20 @@ const PersonasModal = ({ modalPersonas, setModalPersonas, personas }) => {
           </button>
         </div>
         <div className={styles.modalContent}>
+          <button 
+            className={`${styles.navButton} ${styles.prevButton}`}
+            onClick={goToPrev}
+            aria-label="Anterior"
+          >
+            <ChevronLeft size={24} />
+          </button>
+          <button 
+            className={`${styles.navButton} ${styles.nextButton}`}
+            onClick={goToNext}
+            aria-label="Siguiente"
+          >
+            <ChevronRight size={24} />
+          </button>
           <Slider ref={sliderRef} {...settings}>
             {personas.map((persona, index) => (
               <div key={index}>

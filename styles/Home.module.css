@@ -24,7 +24,7 @@
   z-index: 1;
 }
 .imageS1 {
-  width: 100vw;
+  width: 100%;
   z-index: 0;
 }
 .text1_a1_s1 {
@@ -449,7 +449,7 @@
 /* SECTION MINI 1 */
 .sectionMini1:before {
   content: "";
-  width: 100vw;
+  width: 100%;
   height: 550px;
   position: absolute;
   background-image: radial-gradient(
@@ -630,7 +630,7 @@
   z-index: 1;
 }
 .imageS3 {
-  width: 100vw;
+  width: 100%;
   z-index: 0;
 }
 .text1_a1_s3 {

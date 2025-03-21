@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Slider from 'react-slick';
 import classNames from 'classnames';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import styles from '../styles/TimelineCarousel.module.css'; // Estilos CSS personalizados
@@ -35,6 +36,7 @@ const TimelineCarousel = ({ images }) => {
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: '0px',
+    arrows: false,
     beforeChange: (current, next) => {
       setCurrentSlide(next);
       // Actualizar el año activo basado en la diapositiva actual
@@ -47,7 +49,7 @@ const TimelineCarousel = ({ images }) => {
       {
         breakpoint: 768,
         settings: {
-          arrows: true,
+          arrows: false,
           dots: false,
           slidesToShow: 1
         }
@@ -61,6 +63,18 @@ const TimelineCarousel = ({ images }) => {
     if (yearIndex !== undefined && sliderRef.current) {
       sliderRef.current.slickGoTo(yearIndex);
       setActiveYear(year);
+    }
+  };
+
+  const goToPrev = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickPrev();
+    }
+  };
+
+  const goToNext = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickNext();
     }
   };
 
@@ -83,6 +97,20 @@ const TimelineCarousel = ({ images }) => {
       </div>
       {/* Carrusel de imágenes */}
       <div className={styles.sliderContainer}>
+        <button 
+          className={`${styles.navButtons} ${styles.prevBtn}`}
+          onClick={goToPrev}
+          aria-label="Anterior"
+        >
+          <ChevronLeft size={24} />
+        </button>
+        <button 
+          className={`${styles.navButtons} ${styles.nextBtn}`}
+          onClick={goToNext}
+          aria-label="Siguiente"
+        >
+          <ChevronRight size={24} />
+        </button>
         <Slider {...settings} ref={sliderRef}>
           {images.map((image, index) => (
             <div key={index} className={styles.slideItem}>
