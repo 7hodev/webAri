@@ -39,14 +39,14 @@ export default function TallerCultura({
       nombre: "JISSEL SUCRE SOUSA",
       puesto: "Tesorera",
       descripcion:
-        "Reconocida Corredora de Seguros independiente, profesión que ejerce desde el año 2008. Graduada en Finanzas, tiene también una Maestría en Administración de Negocios con énfasis en Gerencia Estratégica, ambos títulos de la Universidad Interamericana de Panamá. Entre sus otras esperticias se cuenta: el mercado de valores, mismo en el que tiene una pericia de 7 años, y la gestión de redes sociales, siendo hoy la community manager de la marca Conos y Waffles Clarita. Es también una ávida lectora así como aficionada a la fotografía y la numismática.",
+        "Reconocida Corredora de Seguros independiente, profesión que ejerce desde el año 2008. Graduada en Finanzas, tiene también una Maestría en Administración de Negocios con énfasis en Gerencia Estratégica, ambos títulos de la Universidad Interamericana de Panamá. Entre sus otras experticias se cuenta: el mercado de valores, mismo en el que tiene una pericia de 7 años, y la gestión de redes sociales, siendo hoy la community manager de la marca Conos y Waffles Clarita. Es también una ávida lectora así como aficionada a la fotografía y la numismática.",
       imagen: "/elequipo/JSpicTC2025a.jpg", 
     },
     {
       nombre: "JOEL IVÁN DEL CID GRAJALES",
       puesto: "Secretario",
       descripcion:
-        "Ingeniero Electromecánico de formación y Profesor de Francés como Lengua Extranjera, nacido en la ciudad de David. Ávido lector desde la infancia, amante tanto de las ciencias como de las letras. Es también agregado cultural de la Alianza Francesa de David y presidente del Movimiento Furtivos. Literatura, Arte, Cultura de Chiriquí. Entre sus hoobies practica el ajedrez no profesional desde muy joven.",
+        "Ingeniero Electromecánico de formación y Profesor de Francés como Lengua Extranjera, nacido en la ciudad de David. Ávido lector desde la infancia, amante tanto de las ciencias como de las letras. Es también agregado cultural de la Alianza Francesa de David y presidente del Movimiento Furtivos. Literatura, Arte, Cultura de Chiriquí. Entre sus pasatiempos practica el ajedrez no profesional desde muy joven.",
       imagen: "/elequipo/JIDCpicTC20252.jpg", 
     },
     {
