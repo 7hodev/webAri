@@ -36,7 +36,7 @@ export default function Navbar() {
           </div>
           <div className={styles.item}>
             <Link href="/andares">
-              <i class="bi bi-pencil-fill"></i>Andares
+              <i class="bi bi-images"></i>Andares
             </Link>
           </div>
           <div className={styles.item}>

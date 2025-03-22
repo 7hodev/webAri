@@ -29,7 +29,7 @@ export default function Footer(props) {
             <Link href="/quien">
               <Image
                 className={styles.group}
-                src="/icons/Quien 11552c.png"
+                src="/icons/quien11552c.png"
                 alt="Ariadna Garcia"
                 width={20}
                 height={20}
@@ -41,7 +41,7 @@ export default function Footer(props) {
             <Link href="/haceres">
               <Image
                 className={styles.group}
-                src="/icons/Haceres 9351713b.png"
+                src="/icons/haceres9351713b.png"
                 alt="Ariadna Garcia"
                 width={20}
                 height={20}
@@ -53,7 +53,7 @@ export default function Footer(props) {
             <Link href="/andares">
               <Image
                 className={styles.group}
-                src="/icons/Andares 11552b.png"
+                src="/icons/andares11552b.png"
                 alt="Ariadna Garcia"
                 width={20}
                 height={20}
