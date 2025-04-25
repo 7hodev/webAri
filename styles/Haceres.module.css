@@ -3,7 +3,7 @@
 }
 /* SECTION 1 */
 .section1 {
-  height: 550px;
+  height: 650px;
   margin: 1rem 0 5rem 0;
   display: flex;
   justify-content: center;
@@ -51,16 +51,10 @@
 .publicaciones {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 6rem;
   display: flex;
   flex-direction: column;
   gap: 4rem;
-}
-
-.publicaciones h2 {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 2rem;
 }
 
 .publi {
@@ -89,10 +83,15 @@
 
 .libro1img {
   border: 2px solid #000;
-  width: 300px;
-  height: 370px;
-  object-fit: cover;
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  max-height: 370px;
+  object-fit: contain;
+  object-position: center;
+  background-color: white;
 }
+
 
 .libro1 h3 {
   font-size: 1.3rem;
